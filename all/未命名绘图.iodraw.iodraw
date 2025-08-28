@@ -4,39 +4,6 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-2" value="st=&gt;start: 用户调用submitPayOrder" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="240" y="180" width="340" height="286" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-3" value="op1=&gt;operation: AppPayOrderController.submitPayOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="26" width="340" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-4" value="op2=&gt;operation: PayOrderService.submitOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="52" width="340" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-5" value="cond1=&gt;condition: 支付渠道类型?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="78" width="340" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-6" value="op3=&gt;operation: ApplePayClient.unifiedOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="104" width="340" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-7" value="op4=&gt;operation: GoogleAppPayClient.doUnifiedOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="130" width="340" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-8" value="op5=&gt;operation: 验证purchaseToken" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="156" width="340" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-9" value="op6=&gt;operation: 调用Google Play Developer API" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="182" width="340" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-10" value="op7=&gt;operation: 验证订单状态" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="208" width="340" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-11" value="op8=&gt;operation: 创建PayOrderExtensionDO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="234" width="340" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="Ha5y4Y0Qu6BZhU-vQfvo-12" value="op9=&gt;operation: 返回支付结果" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ha5y4Y0Qu6BZhU-vQfvo-2">
-          <mxGeometry y="260" width="340" height="26" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
