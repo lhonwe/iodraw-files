@@ -1,0 +1,97 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) iodraw/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="第 1 页" id="3jCiMRDL9z3XifFpF_ix">
+    <mxGraphModel dx="1781" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-1" value="st=&gt;start: 用户调用submitPayOrder" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="180" width="340" height="286" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-2" value="op1=&gt;operation: AppPayOrderController.submitPayOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="26" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-3" value="op2=&gt;operation: PayOrderService.submitOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="52" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-4" value="cond1=&gt;condition: 支付渠道类型?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="78" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-5" value="op3=&gt;operation: ApplePayClient.unifiedOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="104" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-6" value="op4=&gt;operation: GoogleAppPayClient.doUnifiedOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="130" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-7" value="op5=&gt;operation: 验证票据/Token" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="156" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-8" value="op6=&gt;operation: 调用第三方API验证" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="182" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-9" value="op7=&gt;operation: 验证订单状态" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="208" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-10" value="op8=&gt;operation: 创建PayOrderExtensionDO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="234" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-11" value="op9=&gt;operation: 返回支付结果" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-1">
+          <mxGeometry y="260" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-12" value="st-&gt;op1-&gt;op2-&gt;cond1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="180" width="300" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-13" value="cond1(yes, right)-&gt;op3-&gt;op5-&gt;op6-&gt;op7-&gt;op8-&gt;op9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-12">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-14" value="cond1(no)-&gt;op4-&gt;op5-&gt;op6-&gt;op7-&gt;op8-&gt;op9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-12">
+          <mxGeometry y="52" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-15" value="callback=&gt;start: 第三方支付回调" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="180" width="300" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-16" value="op10=&gt;operation: PayNotifyController.notifyOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-15">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-17" value="op11=&gt;operation: PayOrderService.notifyOrder()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-15">
+          <mxGeometry y="52" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-18" value="cond2=&gt;condition: 支付渠道类型?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-15">
+          <mxGeometry y="78" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-19" value="cond3=&gt;condition: 支付状态?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-15">
+          <mxGeometry y="104" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-20" value="op12=&gt;operation: Apple回调处理" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-15">
+          <mxGeometry y="130" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-21" value="op13=&gt;operation: Google回调处理" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-15">
+          <mxGeometry y="156" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-22" value="op14=&gt;operation: updateOrderSuccess()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-15">
+          <mxGeometry y="182" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-23" value="op15=&gt;operation: 创建支付通知任务" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-15">
+          <mxGeometry y="208" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-24" value="op16=&gt;operation: 处理会员订阅" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-15">
+          <mxGeometry y="234" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-25" value="callback-&gt;op10-&gt;op11-&gt;cond2" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="180" width="210" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-26" value="cond2(yes, right)-&gt;op12-&gt;cond3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-25">
+          <mxGeometry y="26" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-27" value="cond2(no)-&gt;op13-&gt;cond3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-25">
+          <mxGeometry y="52" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-28" value="cond3(成功)-&gt;op14-&gt;op15-&gt;op16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-25">
+          <mxGeometry y="78" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sXhK6zUnSixW-mJ_GNeO-29" value="cond3(失败)-&gt;op14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sXhK6zUnSixW-mJ_GNeO-25">
+          <mxGeometry y="104" width="210" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
